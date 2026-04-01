@@ -36,6 +36,16 @@
             bindings = <&kp TAB>;
             key-positions = <11 12>;
         };
+
+        ten {
+            bindings = <&kp COMMA>;
+            key-positions = <30 31>;
+        };
+
+        maru {
+            bindings = <&kp PERIOD>;
+            key-positions = <31 32>;
+        };
     };
 
     behaviors {
@@ -54,10 +64,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R      &kp T                                               &kp Y        &kp U  &kp I     &kp O     &lt 6 P
-&kp A             &kp S         &kp D         &kp F      &kp G        &none             &kp LS(N7)           &kp H        &kp J  &lt 5 K   &kp L     &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &kp LC(Z)         &kp SQT              &kp N        &kp M  &mkp MB1  &mkp MB3  &kp SLASH
-&kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &lt 3 TAB  &lt 2 SPACE  &lt 3 DELETE      &mt RSHFT BACKSPACE  &lt 1 ENTER                             &mkp MB2
+&kp Q             &kp W         &kp E         &kp R      &kp T                                                          &kp Y        &kp U  &kp I     &kp O     &lt 6 P
+&kp A             &kp S         &kp D         &kp F      &kp G        &none                        &kp LS(N7)           &kp H        &kp J  &lt 5 K   &kp L     &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &kp LS(INTERNATIONAL_1)      &kp SQT              &kp N        &kp M  &mkp MB1  &mkp MB3  &kp SLASH
+&kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &lt 3 TAB  &lt 2 SPACE  &lt 1 DELETE                 &mt RSHFT BACKSPACE  &lt 3 ENTER                             &mkp MB2
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -77,7 +87,7 @@
 &kp EXCLAMATION       &kp AT             &kp HASH              &kp DOLLAR  &kp PERCENT                                    &kp CARET                &kp AMPERSAND  &kp MINUS      &kp EQUAL       &kp INTERNATIONAL_3
 &kp LESS_THAN         &kp RIGHT_BRACKET  &kp ASTRK             &none       &none        &none                     &none   &kp LS(LG(RIGHT_ARROW))  &none          &kp LS(MINUS)  &kp LEFT_BRACE  &kp LEFT_BRACKET
 &kp LS(GREATER_THAN)  &kp BACKSLASH      &kp LEFT_PARENTHESIS  &none       &none        &kp LA(LC(NUMBER_0))      &trans  &kp LS(LG(LEFT_ARROW))   &trans         &trans         &kp LS(SLASH)   &kp LS(INTERNATIONAL_3)
-&bt BT_CLR            &trans             &trans                &trans      &trans       &trans                    &trans  &trans                                                                 &trans
+&trans                &trans             &trans                &trans      &trans       &trans                    &trans  &trans                                                                 &trans
             >;
         };
 
@@ -85,8 +95,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &kp LS(LA(TAB))  &kp LC(PAGE_UP)    &kp UP_ARROW  &kp PAGE_UP      &kp LA(TAB)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp HOME         &kp LEFT_ARROW     &kp DOWN      &kp RIGHT_ARROW  &kp END
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans           &kp LC(PAGE_DOWN)  &trans        &kp PAGE_DOWN    &kp LC(END)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(HOME)                                                       &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(HOME)     &kp LC(PAGE_DOWN)  &trans        &kp PAGE_DOWN    &kp LC(END)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
