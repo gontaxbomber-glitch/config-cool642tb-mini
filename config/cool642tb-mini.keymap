@@ -84,10 +84,10 @@
 
         NUM {
             bindings = <
-&kp EXCLAMATION       &kp AT             &kp HASH              &kp DOLLAR  &kp PERCENT                                    &kp CARET                &kp AMPERSAND  &kp MINUS      &kp EQUAL       &kp INTERNATIONAL_3
-&kp LESS_THAN         &kp RIGHT_BRACKET  &kp ASTRK             &none       &none        &none                     &none   &kp LS(LG(RIGHT_ARROW))  &none          &kp LS(MINUS)  &kp LEFT_BRACE  &kp LEFT_BRACKET
-&kp LS(GREATER_THAN)  &kp BACKSLASH      &kp LEFT_PARENTHESIS  &none       &none        &kp LA(LC(NUMBER_0))      &trans  &kp LS(LG(LEFT_ARROW))   &trans         &trans         &kp LS(SLASH)   &kp LS(INTERNATIONAL_3)
-&trans                &trans             &trans                &trans      &trans       &trans                    &trans  &trans                                                                 &trans
+&kp EXCLAMATION       &kp AT             &kp HASH              &kp DOLLAR       &kp PERCENT                           &kp CARET                &kp AMPERSAND  &kp MINUS      &kp EQUAL       &kp INTERNATIONAL_3
+&kp LESS_THAN         &kp RIGHT_BRACKET  &kp ASTRK             &kp LA(TAB)      &none        &none            &none   &kp LS(LG(RIGHT_ARROW))  &none          &kp LS(MINUS)  &kp LEFT_BRACE  &kp LEFT_BRACKET
+&kp LS(GREATER_THAN)  &kp BACKSLASH      &kp LEFT_PARENTHESIS  &kp LA(LS(TAB))  &none        &kp LA(TAB)      &trans  &kp LS(LG(LEFT_ARROW))   &trans         &trans         &kp LS(SLASH)   &kp LS(INTERNATIONAL_3)
+&trans                &trans             &trans                &trans           &trans       &trans           &trans  &trans                                                                 &trans
             >;
         };
 
